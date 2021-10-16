@@ -1,6 +1,6 @@
 <?php
 require 'vendor/autoload.php';
-\Stripe\Stripe::setApiKey('sk_test_51J3cvIGKUmLV3VlznAGQprgn6DpjvqcRyNcsZsxoWNu$
+\Stripe\Stripe::setApiKey('sk_test_51J3cvIGKUmLV3VlznAGQprgn6DpjvqcRyN
 header('Content-Type: application/json');
 $checkout_session = \Stripe\Checkout\Session::create([
   'payment_method_types' => ['card'],
