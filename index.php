@@ -1,7 +1,7 @@
 <?php
 
 require_once('vendor/autoload.php');
-\Stripe\Stripe::setApiKey('sk_test_51J3cvIGKUmLV3VlznAGQprgn6DpjvqcRyNcsZsxoWNu$
+\Stripe\Stripe::setApiKey('sk_test_51J3cvIGKUmLV3VlznAGQprgn6DpjvqcRyNcs
 
 $session = \Stripe\Checkout\Session::create([
   'payment_method_types' => ['card'],
@@ -31,7 +31,7 @@ $session = \Stripe\Checkout\Session::create([
     <button id="checkout-button">Checkout</button>
     <script>
       var stripe =
-Stripe('pk_test_51J3cvIGKUmLV3Vlzw5tJn6sHKFgxzBZsQbnb3iaPpeLVBQqyjvbKg9APRqju9A$
+Stripe('pk_test_51J3cvIGKUmLV3Vlzw5tJn6sHKFgxzBZsQbnb3iaPpeLVBQqyjvb
       const btn = document.getElementById("checkout-button")
       btn.addEventListener('click', function(e) {
       e.preventDefault();
